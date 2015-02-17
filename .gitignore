@@ -1,0 +1,11 @@
+*.class
+*.apk
+bin/
+gen/
+.settings/
+proguard/
+.metadata/
+RemoteSystemsTempFiles/
+appcompat_v7/
+/PhoneRouter/.classpath
+/PhoneRouter/project.properties

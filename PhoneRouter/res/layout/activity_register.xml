@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background_color"
+        android:orientation="vertical" >
+
+        <!-- 填写用户名 -->
+
+        <EditText
+            android:id="@+id/register_account"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="40.0dip"
+            android:layout_marginRight="40.0dip"
+            android:layout_marginTop="30.0dip"
+            android:enabled="true"
+            android:hint="@string/guide_register_phone_account_hint"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+           
+            android:paddingLeft="8.0dip"
+            android:singleLine="true"
+            android:textColorHint="@color/activity_from"
+            android:textSize="16.0sp" />
+
+        <!-- 填写邮箱 -->
+
+        <EditText
+            android:id="@+id/register_email"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="40.0dip"
+            android:layout_marginRight="40.0dip"
+            android:layout_marginTop="10.0dip"
+            android:digits="@string/register_password_digits"
+            android:enabled="true"
+            android:hint="@string/guide_register_phone_email_hint"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            
+            android:paddingLeft="8.0dip"
+            android:singleLine="true"
+            android:textColorHint="@color/activity_from"
+            android:textSize="16.0sp" />
+        <!-- 填写密码 -->
+
+        <EditText
+            android:id="@+id/register_account_password"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="40.0dip"
+            android:layout_marginRight="40.0dip"
+            android:layout_marginTop="10.0dip"
+            android:digits="@string/register_password_digits"
+            android:enabled="true"
+            android:hint="@string/guide_register_phone_password_hint"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:paddingLeft="8.0dip"
+            android:password="true"
+            android:textColorHint="@color/activity_from"
+            android:textSize="16.0sp" />
+        <!-- 重复密码 -->
+
+        <EditText
+            android:id="@+id/register_account_password_twice"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="40.0dip"
+            android:layout_marginRight="40.0dip"
+            android:layout_marginTop="10.0dip"
+            android:enabled="true"
+            android:hint="@string/guide_register_phone_password_hint_twice"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:paddingLeft="8.0dip"
+            android:textColorHint="@color/activity_from"
+            android:textSize="16.0sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/layout_show_code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40.0dip"
+            android:layout_marginRight="40.0dip"
+            android:layout_marginTop="10.0dip" >
+
+            <TextView
+                android:id="@+id/guide_phone_auth_code_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8.0dip"
+                android:text="@string/guide_register_verify_code_hint"
+                android:textColor="#ff333333"
+                android:textSize="14.0sp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/guide_phone_auth_code"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:layout_marginRight="8.0dip"
+                android:layout_weight="1.0"
+                android:inputType="number"
+                android:maxLength="5"
+                android:paddingLeft="8.0dip"
+                android:paddingRight="8.0dip"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/guide_phone_code_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:paddingLeft="8.0dip"
+                android:paddingRight="8.0dip"
+                android:text="@string/guide_register_retrieve_verifycode"
+                android:textColor="@color/button_text"
+                android:textSize="14.0sp"
+                android:visibility="gone" />
+        </LinearLayout>
+        <!-- 注册按钮 -->
+
+        <Button
+            android:id="@+id/phone_account_register_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="40.0dip"
+            android:layout_marginRight="40.0dip"
+            android:layout_marginTop="10.0dip"
+            android:text="@string/guide_register"
+            android:textColor="@color/white3"
+            android:textSize="18.0sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_guide_phone_register_is_agree"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40.0dip"
+            android:layout_marginTop="12.0dip"
+            android:orientation="horizontal" >
+
+            <!-- 勾选协议 -->
+
+            <CheckBox
+                android:id="@+id/guide_phone_check_checkbox"
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_marginRight="8.0dip"
+                android:button="@drawable/check_box"
+                android:checked="true" />
+
+            <TextView
+                android:id="@+id/guide_phone_check_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/guide_agree_use_contacts1"
+                android:textColor="#ff333333"
+                android:textSize="14.0sp" />
+            <!-- 协议条款 -->
+
+            <TextView
+                android:id="@+id/register_input_phone_terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/guide_agree_use_contacts2"
+                android:textColor="@color/default_button_background_pressed_light"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

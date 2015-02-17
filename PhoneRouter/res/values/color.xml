@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_color">#fff6f6f6</color>
+    <color name="tab_list_front_color">#ff585858</color>
+    <color name="white3">#EEEEFF</color>
+    <color name="main_front_color">#ff333333</color>
+    <color name="submain_front_color">#ff858585</color>
+    <color name="activity_from">#ffb0b0b0</color>
+    <color name="button_text">#ff005092</color>
+    <color name="default_button_background_pressed_light">#ff00ddff</color>
+</resources>

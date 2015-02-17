@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:title="@string/preference_category_settings_title">
+	<PreferenceCategory android:title="@string/preference_category_settings_title">
+		<CheckBoxPreference android:key="@string/preference_showhidden_key"
+			android:title="@string/preference_showhidden_title" android:summary="@string/preference_showhidden_summary"
+			android:defaultValue="@string/preference_showhidden_default_value">
+		</CheckBoxPreference>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/preference_category_about_title">
+		
+		
+		
+		
+		<Preference android:title="@string/preference_version_title"
+			android:summary="@string/preference_version_summary" android:enabled="false" />
+	</PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="15dip"
+    android:paddingLeft="12dip"
+    android:paddingRight="12dip"
+    android:paddingTop="15dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="100dip"
+        android:layout_weight="0.68"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/function_switchname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dip"
+            android:layout_weight="2"
+            android:text="名字"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+        <TextView
+            android:id="@+id/function_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:text="开	启"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <com.imudges.zt.util.WiperSwitch
+        android:id="@+id/function_switch"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginLeft="-100dip"
+        android:background="#fffaf0"
+        android:focusable="false" />
+
+</LinearLayout>

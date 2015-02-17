@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <com.imudges.zhw.cui.ZHWImageView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:gravity="center"
+            android:scaleType="matrix"
+            android:src="@drawable/top" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.01"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+               
+                android:orientation="vertical" >
+
+                <com.imudges.zhw.cui.ZHWImageView
+                    android:id="@+id/settings_zhwIv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:scaleType="matrix"
+                    android:src="@drawable/left_top" />
+
+                <com.imudges.zhw.cui.ZHWImageView
+                    android:id="@+id/feedback_zhwIv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:scaleType="matrix"
+                    android:src="@drawable/left_bottom" />
+            </LinearLayout>
+
+            <com.imudges.zhw.cui.ZHWImageView
+                android:id="@+id/function_zhwIv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:scaleType="matrix"
+                android:src="@drawable/right" />
+        </LinearLayout>
+
+        <com.imudges.zhw.cui.ZHWImageView
+            android:id="@+id/about_zheIv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:layout_weight="0.001"
+            android:scaleType="matrix"
+            android:src="@drawable/bottom" />
+
+    </LinearLayout>
+
+</LinearLayout>
